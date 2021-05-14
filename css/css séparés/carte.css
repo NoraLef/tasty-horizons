@@ -1,0 +1,96 @@
+#flipbook{
+    width:400px;
+    height:300px;
+}
+
+body {
+	margin:0;
+	background-attachment: fixed;
+    font-family: 'BioRhyme', serif;
+}
+
+* {
+	 box-sizing:border-box;
+ }
+
+a {
+	background-color: transparent; 
+	color:#696969; 
+	text-decoration: none;
+}
+
+a:hover,a:active {outline: 0;}
+.titleh3 {
+	text-align: center;
+}
+
+#cartes {
+    display: flex;
+    flex-direction: column;
+}
+
+#centerCarte {
+	width:60%;
+    height:70vh;
+    margin: auto;
+}
+
+#menuView {
+    width: 100%;
+}
+
+#flipbook {
+	width:100%;
+    height:100%;
+    margin: 2vh auto;
+}
+#flipbook .page{
+    width:100%;
+    height:100%;
+    background-color:white;
+    line-height:300px;
+    font-size:20px;
+    text-align:center;
+    background-image: url("../Images/menuPageBackground.jpg");
+}
+
+
+#flipbook .hard{
+    background-image: url("../Images/menuCoverBackground.jpg");
+    color:#333;
+    -webkit-box-shadow:inset 0 0 5px #666;
+    -moz-box-shadow:inset 0 0 5px #666;
+    -o-box-shadow:inset 0 0 5px #666;
+    -ms-box-shadow:inset 0 0 5px #666;
+    box-shadow:inset 0 0 5px #666;
+    font-family: 'Miss Fajardose', cursive;
+    font-size: 6vw;
+}
+
+
+
+#menuView {
+	display: flex;
+	justify-content: space-around;
+	margin: 4vh auto;
+}
+
+.subMenu div:first-child {
+	width: 200px;
+	height: 300px;
+    background-image: url("../Images/menuCoverBackground.jpg");
+    font-family: 'Miss Fajardose', cursive;
+    font-size: 2vw;
+    color:#EEE;
+    text-align: center;
+    margin: 4vh auto;
+    line-height: 140px;
+}
+
+.subMenu div:not(:first-child) {
+    display: none;
+}
+
+.subMenu {
+    cursor: pointer;
+}

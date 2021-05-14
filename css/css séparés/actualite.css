@@ -1,0 +1,93 @@
+body {
+	margin:0;
+	background-attachment: fixed;
+    font-family: 'BioRhyme', serif;
+}
+
+* {
+	 box-sizing:border-box;
+ }
+
+a {
+	background-color: transparent; 
+	color:#696969; 
+	text-decoration: none;
+}
+
+a:hover,a:active {outline: 0;}
+.titleh3 {
+	text-align: center;
+}
+#actus {
+	display: flex;
+	justify-content: space-between;
+}
+#articles {
+	width: 80%;
+	text-align: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-content: space-around;
+}
+#articles h3 {
+	width: 100%;
+}
+#articles a {
+	width: 35%;
+	margin: 4vh auto;
+}
+#articles a article img {
+	width: 100%;
+}
+#articles a article div {
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	border: 1px solid black;
+}
+#articles a article div p {
+	width: 50%;
+	text-align: center;
+	margin: auto;
+}
+#articles a article div p:last-child {
+	border-left: 1px solid black;
+}
+#events {
+	width: 20%;
+	right: 0;
+}
+#list_events {
+	height: 66vh;
+	border: 2px solid black;
+	text-align: center;
+	overflow-x: hidden;
+	overflow-y: scroll;
+}
+.event {
+	overflow: hidden;
+	border: solid black 1px;
+}
+.event img {
+	width: 100%;
+}
+#eventButton {
+	border: 1px solid black;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	text-align: center;
+	margin: 0;
+}
+.eventFixed {
+	position: fixed;
+	top: 60px;
+}
+#eventButton:hover, #articles article div p:hover {
+	background-color: orange;
+	cursor: pointer;
+}
+#articles a article:hover {
+	border: solid black 2px;
+	cursor: pointer;
+}

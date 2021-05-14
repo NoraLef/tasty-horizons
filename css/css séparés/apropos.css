@@ -1,0 +1,183 @@
+body {
+    margin:0;
+    background-attachment: fixed;
+    font-family: 'BioRhyme', serif;
+   	background-image: url("img/background12.jpg");
+   	color:black;
+    background-repeat: no-repeat;
+    background-size: cover;
+	/*background-color: #efefef;*/
+}
+
+* {
+     box-sizing:border-box;
+ }
+
+a {
+    background-color: transparent; 
+    color:#696969 ; 
+    text-decoration: none;
+}
+
+a:hover,a:active {outline: 0;}
+
+.titleh3 {
+	margin:0;
+	text-align: center;
+	font-size:2em;
+	margin-bottom: 15vh;
+	margin-top: 5vh;
+}
+
+.photoList {
+	display: flex;
+	flex-direction: row;
+	justify-content:space-around;
+	width: 100%;
+}
+
+.containerFlip {
+	width: 20%;
+	height: 20%;
+	position: relative;
+	margin: auto;
+	perspective: 1000px;
+	border-radius: 50%;
+   
+}
+
+/*On indique que la carte prend toute la div, la durée de l'animation de retournement de la carte et on on applique un transform-style 
+indiquant que les éléments  enfants préservent leur position 3D*/ 
+.flip{
+    width: 100%;
+	transition:0.6s;
+	transform-style: preserve-3d;
+	position:relative;
+	
+}
+/*On indique la taille de la face avant et de la face arrière puis on dit que de base la face arrière est cachée*/
+.front, .back{
+	position:absolute;
+	-webkit-backface-visibility: hidden;
+}
+/*On définit l'animation qui permet de tourner la carte*/
+.back{
+	-webkit-transform:rotateY(180deg);
+}
+
+/*Quand la carte est tournée on ne voit plus la face avant*/
+.front{
+	z-index: 2;
+}
+
+/*On applique l'animation de retournement de la carte lorsque l'on passe le curseur*/
+.containerFlip:hover .flip, .containerFlip.hover .flip {
+    transform: rotateY(180deg);
+}
+/*On modifie légèrement la transparance de la carte afin de rendre le texte plus lisible*/
+.photo-flex{
+	width: 80%;
+	height: 80%;
+	border-radius: 50%;
+	
+}
+/*On met en forme le titre sur la face avant de la carte */
+.titlemosa {
+	position: relative;
+	z-index: 3;
+	bottom:60%;
+	text-align: center;
+	font-size: 1.5em;
+	color: gold;
+    font-weight: bolder;
+}
+
+/*On met en forme le texte qui apparait en dessous de la carte lorsqu'on la retourne */
+.textphoto {
+	position: relative;.
+	bottom: 70%;
+	text-align: center;
+    font-size: 1.5em
+}
+
+
+.equipe {
+	height: 75vh;
+	width: 100%;
+}
+
+@media screen and (max-width: 640px) {
+
+	.photoList {
+		flex-direction: column;
+		height: 130vh;
+	}
+
+	.equipe {
+		height:160vh;
+	}
+}
+
+.philosophie-ent {
+	width: 100%;
+	height: 100vh;
+	border-top: solid 2px black;
+}
+
+.img-philo {
+	width: 100%;
+	height: 100%;
+	border:solid 1px black;
+}
+
+.banner-philo {
+	height: 70vh;
+	overflow: hidden;
+}
+
+.text-philo {
+	height: 50vh;
+	top:75vh;
+	margin: 2vw;
+	background-color: white;
+	opacity: 0.8;
+	transition-property: transform;
+	transition-duration: 1s;
+	transition-timing-function: ease-in;
+	overflow-wrap: break-word;
+
+}
+
+.banner-philo:hover > p {
+	transform: translateY(-50vh);
+
+}
+
+.partenaire-ent {
+	width: 100%;
+	border-top: solid 2px black;
+}
+
+.lineflex {
+	display: flex;
+	justify-content: space-around;
+	height: 80vh;
+}
+
+.columnflex {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.img-partenaire {
+	border-radius:50%;
+	height: 20%;
+	width:20%;
+	margin-left: 5vw;
+	margin-right: 1vw;
+}
+
+.lineflex2 {
+	display: flex;
+}
