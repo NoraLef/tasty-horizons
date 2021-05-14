@@ -66,7 +66,7 @@
     <script src="Js/JsAcceuil.js" type="text/javascript"></script>
     <script type="text/javascript" src="lib/slick/slick/slick.min.js"></script>
     <script src="Js/carousel.js"></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCQkwoUtBsgcaW5vFyGkRx_7WHB2tfUF-E&callback=initMap" type="text/javascript"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=GoogleMapKey&callback=initMap" type="text/javascript"></script>
 </body>
 
 </html>
